@@ -22,71 +22,84 @@
     <p>Temukan modul, sensor, dan komponen lainnya di sini.</p>
   </section>
 
+  <!-- Filter Kategori -->
+  <section class="filter">
+    <label for="filterKategori">Filter Kategori:</label>
+    <select id="filterKategori" onchange="filterProduk()">
+      <option value="all">Semua</option>
+      <option value="modul">Modul</option>
+      <option value="sensor">Sensor</option>
+      <option value="motor">Motor</option>
+      <option value="aksesori">Aksesori</option>
+    </select>
+  </section>
+
+  <!-- Katalog Produk -->
   <section id="produk" class="produk-grid">
-    <div class="produk">
+    <div class="produk modul">
       <img src="images (1).jpeg" alt="XL4015 Module" />
       <h3>XL4015 Step-Down Module</h3>
       <p>Regulator buck DC-DC 5A adjustable.</p>
       <p><strong>Rp15.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk motor">
       <img src="images (2).jpeg" alt="DC Motor Mini" />
       <h3>DC Motor Mini</h3>
       <p>Motor DC kecil cocok untuk DIY.</p>
       <p><strong>Rp8.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk aksesori">
       <img src="images (3).jpeg" alt="Heatsink" />
       <h3>Heatsink Aluminium</h3>
       <p>Pendingin untuk IC dan modul.</p>
       <p><strong>Rp3.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk modul">
       <img src="images (4).jpeg" alt="TP4056" />
       <h3>Modul Charger TP4056</h3>
       <p>Charger lithium dengan proteksi.</p>
       <p><strong>Rp6.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk modul">
       <img src="images (5).jpeg" alt="Bluetooth HC-05" />
       <h3>Bluetooth HC-05</h3>
       <p>Modul komunikasi wireless.</p>
       <p><strong>Rp35.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk modul">
       <img src="images (6).jpeg" alt="Relay 5V" />
       <h3>Relay 5V 1 Channel</h3>
       <p>Modul saklar elektronik.</p>
       <p><strong>Rp10.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk aksesori">
       <img src="images (7).jpeg" alt="7 Segment" />
       <h3>Display 7 Segment</h3>
       <p>Tampilan angka LED 4 digit.</p>
       <p><strong>Rp12.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk aksesori">
       <img src="images (8).jpeg" alt="Kipas Mini" />
       <h3>Kipas Mini 5V</h3>
       <p>Kipas pendingin kecil untuk proyek DIY.</p>
       <p><strong>Rp9.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk sensor">
       <img src="images (9).jpeg" alt="DS18B20" />
       <h3>Sensor Suhu DS18B20</h3>
       <p>Sensor digital suhu tahan air.</p>
       <p><strong>Rp18.000</strong></p>
       <button>Beli Sekarang</button>
     </div>
-    <div class="produk">
+    <div class="produk aksesori">
       <img src="images.jpeg" alt="Buzzer" />
       <h3>Buzzer Piezoelektrik</h3>
       <p>Penghasil suara untuk proyek elektronik.</p>
@@ -99,5 +112,7 @@
     <p>&copy; 2025 XL4015 Shop</p>
   </footer>
 
+  <!-- Panggil JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
