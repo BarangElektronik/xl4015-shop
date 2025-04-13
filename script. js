@@ -1,0 +1,12 @@
+function filterProduk() {
+  const kategori = document.getElementById("filterKategori").value;
+  const semuaProduk = document.querySelectorAll(".produk");
+
+  semuaProduk.forEach(produk => {
+    if (kategori === "all" || produk.classList.contains(kategori)) {
+      produk.style.display = "block";
+    } else {
+      produk.style.display = "none";
+    }
+  });
+}
