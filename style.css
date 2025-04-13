@@ -1,56 +1,117 @@
-body {
-  font-family: sans-serif;
+/* Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background-color: #007acc;
+  background-color: #2b9cd8;
   color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
 }
 
 nav a {
   color: white;
-  margin-left: 1rem;
   text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
-  background-color: #e6f2ff;
+  background-color: #e6f7ff;
+  padding: 2rem;
   text-align: center;
-  padding: 2rem 1rem;
 }
 
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Produk Grid */
 .produk-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 2rem;
 }
 
 .produk {
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 1rem;
-  text-align: center;
   background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.produk:hover {
+  transform: translateY(-5px);
 }
 
 .produk img {
   width: 100%;
-  max-height: 150px;
-  object-fit: contain;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 0.5rem;
 }
 
+.produk h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.produk p {
+  margin: 0.25rem 0;
+}
+
+.produk button {
+  margin-top: 0.5rem;
+  background-color: #2b9cd8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.produk button:hover {
+  background-color: #007bbf;
+}
+
+/* Footer */
 footer {
-  background-color: #007acc;
+  background-color: #2b9cd8;
   color: white;
   text-align: center;
   padding: 1rem;
